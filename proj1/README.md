@@ -107,15 +107,12 @@ Bez parametru -d uvidíte logy. První spuštění může trvat 10 s až 3 min.
 7. Pro ukončení běhu a opětovný start použijte:
 ```
     $ docker-compose stop
-    $ docker-compose stop
+    $ docker-compose start
 ```
 8. Odstranění aplikace včetně dat lze pomocí:
 ```
     $ docker-compose down -v
 ```
-
-Pokud máte problém aplikaci zprovoznit lokálně, napište mi [email](mailto:smrcka@fit.vut.cz).
-
 
 ## Literatura
 
