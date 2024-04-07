@@ -5,33 +5,56 @@
 
 ## Matice pokrytí artefaktů
 
-Čísla testů jednoznačně identifikují scénář v souborech `.feature`.
-
-| Page | 1 | 2 | 3 | ... |
-|----------|---|---|---|-----|
-| Page XYZ1 | x | x |   |     |
-| Page XYZ2 | x |   | x |     |
-| Page ... |   |   | x |  x   |
-
+| Page                                    | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 |
+|-----------------------------------------|---|---|---|---|---|---|---|---|---|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+| Search Page                             | x | x | x | x | x | x | x | x | x |    |    |    |    |    | x  | x  | x  |    |    |    |    |    |    |    |
+| Item Page                               |   |   |   |   |   |   |   |   |   |    |    | x  | x  | x  | x  | x  | x  | x  |    |    |    |    |    |    |
+| Cart Page                               |   |   |   |   |   |   |   |   |   |    |    |    | x  |    | x  | x  |    |    |    |    |    |    |    |    |
+| Checkout Page                           |   |   |   |   |   |   |   |   |   |    |    |    |    | x  | x  | x  | x  | x  |    |    |    |    |    |    |
+| Product Catalog Page                    |   |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    |    |    | x  | x  | x  | x  | x  | x  |
+| Product Detail Page                     |   |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    |    |    |    | x  | x  | x  | x  | x  |
+| Found items list                        | x | x | x | x |   | x |   | x | x |    |    |    |    |    | x  |    |    |    |    |    |    |    |    |    |
+| Search category dropdown                |   |   |   | x | x | x | x |   |   |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+| Search in subcategories checkbox        |   |   |   |   | x | x |   |   |   |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+| Search in product descriptions checkbox |   |   |   |   |   |   |   | x | x |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+| Featured items                          |   |   |   |   |   |   |   |   |   | x  |    | x  | x  | x  |    |    |    | x  |    |    |    |    |    |    |
+| Add to cart button                      |   |   |   |   |   |   |   |   |   | x  |    | x  | x  | x  | x  |    |    | x  |    |    |    |    |    |    |
+| Popup message - Added to cart           |   |   |   |   |   |   |   |   |   | x  |    |    | x  |    | x  |    |    |    |    |    |    |    |    |    |
+| Cart info                               |   |   |   |   |   |   |   |   |   |    | x  | x  |    |    |    |    |    |    |    |    |    |    |    |    |
+| Item info                               |   |   |   |   |   |   |   |   |   |    |    |    | x  |    | x  | x  |    |    |    |    |    |    |    |    |
+| View cart link                          |   |   |   |   |   |   |   |   |   |    |    |    | x  |    | x  |    |    |    |    |    |    |    |    |    |
+| Checkout link                           |   |   |   |   |   |   |   |   |   |    |    |    |    | x  |    | x  | x  | x  |    |    |    |    |    |    |
+| Order details                           |   |   |   |   |   |   |   |   |   |    |    |    |    | x  | x  | x  |    | x  |    |    |    |    |    |    |
+| Confirm order                           |   |   |   |   |   |   |   |   |   |    |    |    |    | x  | x  | x  | x  | x  |    |    |    |    |    |    |
+| Product catalog list                    |   |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    |    |    | x  |    | x  |    |    |    |
+| Product catalog controls                |   |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    |    |    | x  | x  | x  | x  | x  | x  |
+| Product stock options                   |   |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    |    |    |    | x  | x  | x  | x  | x  |
+| Product save button                     |   |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    |    |    |    |    | x  | x  | x  | x  |
 
 ## Matice pokrytí aktivit
 
-| Activities | 1 | 2 | 3 | ... |
-|----------|---|---|---|-----|
-| Setting quantity of A to N | x |  | x | |
-| Putting XYZ to cart | x |  | x | |
-| Frenzy clicking ... | | | | x |
-| Checking out | x |  |  |  x  |
-| Cancelling ABCD |   | x | x |    |
-| Registering ... | x | x | x |    |
-| Removing ... | | | | x |
-
+| Activities                     | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 |
+|--------------------------------|---|---|---|---|---|---|---|---|---|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+| Search text                    | x | x | x | x | x | x | x | x | x |    |    |    |    |    | x  | x  | x  |    |    |    |    |    |    |    |
+| Select product category        |   |   |   | x |   | x |   |   |   |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+| View search limitations        |   |   |   |   | x |   | x |   |   |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+| View product categories        |   |   |   |   |   |   | x |   |   |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+| Search in product descriptions |   |   |   |   |   |   |   | x | x |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+| Add item to cart               |   |   |   |   |   |   |   |   |   | x  |    | x  | x  | x  | x  | x  | x  | x  |    |    |    |    |    |    |
+| View cart                      |   |   |   |   |   |   |   |   |   |    | x  | x  | x  |    | x  | x  |    |    |    |    |    |    |    |    |
+| View item                      |   |   |   |   |   |   |   |   |   | x  |    | x  | x  | x  | x  | x  | x  | x  |    |    |    |    |    |    |
+| Fill out order details         |   |   |   |   |   |   |   |   |   |    |    |    |    |    | x  | x  | x  | x  |    |    |    |    |    |    |
+| Confirm order                  |   |   |   |   |   |   |   |   |   |    |    |    |    | x  | x  | x  | x  | x  |    |    |    |    |    |    |
+| Open and login as admin        |   |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    |    |    | x  | x  | x  | x  | x  | x  |
+| View product catalog           |   |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    |    |    | x  | x  | x  |    |    |    |
+| View product detail            |   |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    |    |    |    | x  |    |    |    |    |
+| Edit product stock options     |   |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    |    |    |    |    | x  | x  | x  | x  |
 
 ## Matice Feature-Test
 
-| Feature file | 1 | 2 | 3 | ... |
-|----------|---|---|---|-----|
-| file1.feature | x | x | | |
-| file2.feature |   |   | x | x |
-| ....feature |   |   |  |   |
+| Feature file           | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 |
+|------------------------|---|---|---|---|---|---|---|---|---|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+| ItemSearch.feature     | x | x | x | x | x | x | x | x | x |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+| ItemBuy.feature        |   |   |   |   |   |   |   |   |   | x  | x  | x  | x  | x  | x  | x  | x  | x  |    |    |    |    |    |    |
+| ItemManagement.feature |   |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    |    |    | x  | x  | x  | x  | x  | x  |
 
