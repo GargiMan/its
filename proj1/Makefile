@@ -7,7 +7,7 @@ LOGIN := xgerge01
 
 all: zip
 
-README.pdf: README.md
+pdf: README.md
 	pandoc -V geometry:margin=2cm --variable urlcolor=blue $< -o $@
 
 clean:
