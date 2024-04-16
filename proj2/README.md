@@ -107,11 +107,11 @@ Odevzdejte své řešení prostřednictvím archivu xLOGIN99.zip. Archiv bude ob
     -/                   kořenový adresář archivu
      +- report.pdf       (nepovinný) report z testování
      +- requirements.txt (nepovinný) závislosti Python balíčků
-     +- environment.py   (nepovinný) prostředí pro Behave
      +- features/
         +- *.feature     soubory se scénáři
         +- steps/
            +- *.py       soubory s kroky pro Python-Selenium
+        +- environment.py   (nepovinný) prostředí pro Behave
 
 
 Pro spuštění testů ! na Selenium Serveru! musí být úspěšně provedeny tyto kroky:
