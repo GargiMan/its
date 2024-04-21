@@ -3,21 +3,21 @@
 
 LOGIN := xgerge01
 
-.PHONY: all test pdf clean zip tar
+.PHONY: all test clean zip tar
 
 all: test
 
 test:
 	behave
 
-pdf: README.md
+report.pdf: report.md
 	pandoc -V geometry:margin=2cm --variable urlcolor=blue $< -o $@
 
 clean:
 	rm -f README.pdf $(LOGIN).zip $(LOGIN).tar
 
-zip:
-	zip -rq $(LOGIN).zip features/ environment.py requirements.txt report.pdf
+zip: report.pdf
+	zip -rq $(LOGIN).zip features/ requirements.txt report.pdf
 
-tar:
-	tar -cf $(LOGIN).tar features/ environment.py requirements.txt report.pdf
+tar: report.pdf
+	tar -cf $(LOGIN).tar features/ requirements.txt report.pdf

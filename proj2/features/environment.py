@@ -14,6 +14,7 @@ def get_driver():
             command_executor='http://localhost:4444/wd/hub',
             options=webdriver.FirefoxOptions())
     driver.implicitly_wait(10)
+    driver.maximize_window()
 
     return driver
 
@@ -25,3 +26,9 @@ def before_all(context):
 def after_all(context):
     if hasattr(context, 'drv'):
         context.drv.quit()
+
+
+def before_scenario(context, scenario):
+    if not hasattr(context, 'drv'):
+        context.drv = get_driver()
+    context.drv.delete_all_cookies()

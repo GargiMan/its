@@ -14,7 +14,7 @@ Feature: Manage items
       | Price        |
       | Quantity     |
       | Action       |
-    And I see filter section with options
+    And I see filter section with fields
       | Product Name |
       | Model        |
       | Price        |
@@ -26,11 +26,11 @@ Feature: Manage items
       | Delete  |
 
   @20
-  Scenario: Show product stock options
+  Scenario: Show product stock fields
     When I open the catalog of 'Products'
     And I click on edit button for 1. product
     And I go to 'Data' tab
-    Then I see stock section with options
+    Then I see stock section with fields
       | Quantity            |
       | Minimum Quantity    |
       | Subtract Stock      |
@@ -66,12 +66,12 @@ Feature: Manage items
     When I open the catalog of 'Products'
     And I click on edit button for <index>. product
     And I go to 'Data' tab
-    And I select '<option>' in <field> dropdown
+    And I select '<option>' in '<field>' dropdown
     And I save the product changes
     And I see success saving message
     And I refresh the page
     And I go to 'Data' tab
-    Then I see option '<value>' selected in <field> dropdown
+    Then I see option '<option>' selected in '<field>' dropdown
 
     Examples:
       | index | field               | option       |
@@ -102,12 +102,12 @@ Feature: Manage items
     And I see success saving message
     And I refresh the page
     And I go to 'Data' tab
-    Then I see '<date>' value in 'Date Available' field
+    Then I see '<dateExpected>' value in 'Date Available' field
 
     Examples:
-      | date        |
-      | -0001-01-01 |
-      | 0000-01-01  |
-      | 2024-01-01  |
-      | 9999-01-01  |
-      | 10000-01-01 |
+      | date        | dateExpected |
+      | -0001-01-01 | 0001-01-01   |
+      | 0000-01-01  | 0000-01-01   |
+      | 2024-01-01  | 2024-01-01   |
+      | 9999-01-01  | 9999-01-01   |
+      | 10000-01-01 | 1000-01-01   |

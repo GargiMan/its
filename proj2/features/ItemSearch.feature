@@ -12,7 +12,7 @@ Feature: Search functionalities
 
   @2
   Scenario Outline: Search for existing items
-    When I search for '<item>'
+    When I search for '<item>' in search bar
     Then I see some search results
 
     Examples:
@@ -23,7 +23,7 @@ Feature: Search functionalities
 
   @3
   Scenario Outline: Search for not existing items
-    When I search for '<item>'
+    When I search for '<item>' in search bar
     Then I see no search results
 
     Examples:
@@ -35,7 +35,8 @@ Feature: Search functionalities
   @4
   Scenario Outline: Search within categories
     When I click on the search button
-    And I search for '<item>' within '<category>'
+    And I select '<category>' in category dropdown
+    And I search for '<item>'
     Then I see some search results
 
     Examples:
@@ -55,8 +56,8 @@ Feature: Search functionalities
   @6
   Scenario Outline: Search within subcategories
     When I click on the search button
-    And I check checkbox 'Search in subcategories'
     And I select '<category>' in category dropdown
+    And I check checkbox 'Search in subcategories'
     And I search for '<item>'
     Then I see some search results
 
@@ -66,7 +67,7 @@ Feature: Search functionalities
       | apple   | Monitors       |
       | samsung | Tablets        |
       | samsung | Desktops       |
-      | iMac    | All Categories |
+      | iMac    | Desktops       |
 
   @7
   Scenario: Show product categories in search
